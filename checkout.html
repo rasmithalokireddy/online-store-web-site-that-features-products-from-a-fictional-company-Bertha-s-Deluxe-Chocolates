@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Lokireddy, Rasmitha
+       Jadrn032
+       project #4
+       fall 2017  -->
+<head>
+  <title>Bertha's Deluxe Chocolates | Order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ajax_get_lib.js"></script>
+  <script type="text/javascript" src="js/shopping_cart.js"></script>  
+  <script type="text/javascript" src="js/ajax_populate_page.js"></script>
+  <script type="text/javascript" src="js/orders.js"></script>
+  <link rel="stylesheet" href="css/ocss.css">
+  <!-- <link rel="stylesheet" href="css/signup.css"> -->
+</head>
+<body>
+   <header id="zhip">
+    <p class="zhippingz">Shipping  2$ for each item </p>
+    <div class="content-wrap">
+      <ul>
+        <li class="zertha"> <a href="index.html">Bertha's Deluxe Chocolates</a></li>
+     <li class="zmenu"> <a href="index.html">Home</a> </li>
+     <li class="zd"> <a href="product.html">Products</a></li>
+      <li class="zd"><a href="order.html">Order Online</a></li>
+     <li class="zd"> <a href="aboutus.html">About Us</a></li>
+      <li class="zd"><a href="contact.html">Contact</a></li>
+        <li><a href="order.html"><span class="glyphicon">&#xe116;</span> Cart: <span id="count"></span> </a></li>
+      </ul>
+    </div>
+  </header>
+	<fieldset>
+    <div class="formadjust">
+	<legend>Payment Details</legend>
+        <form  
+        name="registration"
+	enctype="multipart/form-data"
+        onsubmit="formValidation()"
+        action="/perl/jadrn032/proj4/read_cookie.cgi"
+        method="post">
+	    <table>
+            <tr><th>Shipping Address</th></tr>
+            
+                <tr>		
+                    <td><label for="firstname">First Name:</label></td>
+                    <td colspan="2"><input type="text" name="firstname" id="firstname" size="20"  required /></td>                  
+                </tr>
+              </br>
+                <tr>
+                    <td><label for="lastname">Last Name:</label></td>
+                    <td colspan="2"><input type="text" name="lastname" id="lastname" size="20"  required /></td> 
+                </tr>
+                <tr>		
+                    <td><label for="address1">Address Line 1:</label></td>
+                    <td colspan="5"><input type="text" name="address1" id="address1" size="60" required/></td>
+                </tr> 
+                <tr>		
+                    <td><label for="address2">Address Line 2:</label></td>
+                    <td colspan="5"><input type="url" name="address2" id="address2" size="60" placeholder="optional" /></td>
+                </tr> 
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                        <input type="number" name="phone" size="50" min="1000000000" max="9999999999" id="phone" placeholder="Enter 10 digit number" required/>
+                </tr>                 
+                <tr>		
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" name="city" id="city" size="20" required /></td>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" name="state" id="state" size="15" maxlength="2" placeholder="Ex: CA" required/></td>
+
+                    <td><label for="zip" class="lname">Zipcode:</label></td>
+                    <td><input type="number" name="zip" id="zip" size="20" min="10000" max="99999" required/></td>                                        
+                </tr>
+
+<tr>
+     
+     <td> <input type="checkbox" name="shipadd">   Use same as Billing address</td>
+     <td></td>
+</tr>
+
+<tr><th>Billing Address</th></tr>
+
+<tr>        
+                    <td><label for="firstname">First Name:</label></td>
+                    <td colspan="2"><input type="text" name="bfirstname" id="bfirstname" size="20"  required /></td>                  
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name:</label></td>
+                    <td colspan="2"><input type="text" name="blastname" id="blastname" size="20"  required /></td> 
+                </tr>
+                <tr>        
+                    <td><label for="address1">Address Line 1:</label></td>
+                    <td colspan="5"><input type="text" name="baddress1" id="baddress1" size="60" required/></td>
+                </tr> 
+                <tr>        
+                    <td><label for="address2">Address Line 2:</label></td>
+                    <td colspan="5"><input type="url" name="baddress2" id="baddress2" size="60" placeholder="optional" /></td>
+                </tr> 
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                        <input type="number" name="bphone" size="50" min="1000000000" max="9999999999" id="bphone" placeholder="Enter 10 digit number" required/>
+                </tr>                 
+                <tr>        
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" name="bcity" id="bcity" size="20" required /></td>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" name="bstate" id="bstate" size="15" maxlength="2" placeholder="Ex: CA" required/></td>
+
+                    <td><label for="zip" class="lname">Zipcode:</label></td>
+                    <td><input type="number" name="bzip" id="bzip" size="20" min="10000" max="99999" required/></td>                                        
+                </tr>
+                            
+            </table>
+            <br>
+            <div class="set">
+                  <label for="cardtype">Card Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <select name="cardtype" id="cardtype">
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Discover">Discover</option>
+                    <option value="American Express">American Express</option>
+                  </select>
+                
+                <br>
+                    <label  for="cardno">Card Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="cardno" id="cardno" size="60" min="1000000000000000" max="9999999999999999"  placeholder="Enter 16 digit card number" required/>
+                    <br>
+                    <label  for="expdate">Expiration Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="number" name="expdate" id="expmonth" size="6" min="01" max="12"  placeholder="MM" required/>&nbsp;&nbsp; <input type="number" name="expdate" id="expyear" size="10" min="2017" max="9999"  placeholder="YYYY" required/>
+                <br><br><br>
+            
+            <div class="buttons">
+                <input type="reset" />
+                <input type="submit" value="Submit" id="fbutton" />
+            </div>  
+            </div>      
+        </form> 
+        </div>  
+	</fieldset>  
+	<h3 id="status">&nbsp;</h3>   
+    </div>
+    </div>
+</body>
+
+</html>

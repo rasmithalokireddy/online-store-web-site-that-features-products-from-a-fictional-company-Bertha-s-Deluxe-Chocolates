@@ -1,0 +1,235 @@
+/*<!-- Lokireddy, Rasmitha
+       Jadrn032
+       project #4
+       fall 2017  -->*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Acme', sans-serif;
+  margin: 0;
+  background-size: cover;
+  border-top: 1px solid #8B4513;
+}
+  
+}
+
+  /**/
+
+  .zap{
+
+    padding-top: 20px;
+    
+
+  }
+
+  .btn{
+    background-color: #8B4513;
+    color:white;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left:30px;
+    padding: 10px;
+    width:225px;
+    
+  }
+
+#resizing{
+  size: 35px;
+  box-sizing: 35px;
+  align-content: right;
+  text-align: right;
+}
+
+  .zap a{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    
+     color: #8B4513;
+  }
+
+  .zhippingz{
+  background-color: #DEB887;
+  text-align: center;
+  padding: 13px;
+  }
+
+  #zhip p {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+     font-weight: 200px;
+    margin-bottom: 0px;
+    color: #8B4513;
+   
+    padding: 0px;
+  }
+
+ul {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #8B4513;
+    text-align: center;
+}
+.zertha{
+  margin-top: 5px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.glyphicon{
+  
+  
+margin-left: 250px;
+font-size: 20px !important ;
+
+}
+
+.zmenu{
+margin-top: 5px;
+margin-left: 180px;
+}
+
+.zd{
+  margin-top: 5px;
+}
+.zpad{
+  margin-left: 200px; 
+margin-right: 200px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8B4513;
+    color: #FFF;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    background-color: #8B4513 !important;
+    border: none;
+    color: #FFF;
+    
+    text-decoration: none;
+   
+    cursor: pointer;
+  }
+
+  th{
+
+    margin-left: 20px;
+  }
+
+.panel-default > .panel-heading {
+    color: #8B4513;
+    background-color: #DEB887;
+    border-color: #FFF;
+   font-size: 20px;
+   text-align: center;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+.formadjust{
+  padding-left: 30%;
+  padding-top: 5%;
+}
+.panel-body {
+    padding: 15px;
+    font-size: larger;
+}
+
+.panel-default {
+    border-color: #FFF;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+/*.table > tbody > tr > th{
+border-top: 1px solid #8B4513;
+}*/
+.modal-content{
+align-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+}
+button{
+color:#8B4513;
+background-color: #FFF;
+border: #8B4513;
+  }
+
+  .table-condensed > tbody > tr > th {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+
+  }
+h2{
+  text-transform: capitalize;
+}
+
+.formadjust th{
+
+  font-size: 25px;
+
+}
+
+.formadjust input[type=checkbox]{
+
+font-size: :25px;
+
+}
+.formadjust td{
+  font-size: 20px;
+}
+
+.set{
+  font-size: 20px; 
+}
+
+.formadjust{
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background-size: cover;
+  text-align: justify;
+  
+}
+
+  /**/
+
+  .zhippingz{
+  background-color: #DEB887;
+  text-align: center;
+  padding: 13px;
+  }
+
+  #zhip p {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+     font-weight: 200px;
+    margin-bottom: 0px;
+    color: #8B4513;
+   
+    padding: 0px;
+  }
+
+ul {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #8B4513;
+    text-align: center;
+}
+.zertha{
+  margin-top: 5px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.glyphicon{
+  
+  
+margin-left: 250px;
+font-size: 20px !important ;
+
+}
+
+.zmenu{
+margin-top: 5px;
+margin-left: 18%;
+}
+
+.zd{
+  margin-top: 5px;
+}
+.zpad{
+  margin-left: 200px; 
+margin-right: 200px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8B4513;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.carousel-inner{
+  height: 550px;
+
+}
+
+.subscribe{
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+
+img{
+ padding-left: 250px;
+}
+
+.zdescription p{
+  color: #8B4513;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.zdescription{
+  font-family: 'Acme', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.carousel-caption h3 {
+  position: absolute;
+  margin-bottom: auto;
+  color: #8B4513 ;
+  font-weight: bold;
+}
+.zfirst h3 {
+  top: 30px;
+   left: 130px;
+}
+.zfirst p {
+  margin-top: 20px;
+   left: 160px;
+}
+
+.zsecond h3 {
+  top: 30px;
+   left: 210px;
+}
+.zsecond p {
+  margin-top: 20px;
+   left: 180px;
+}
+.zthird h3 {
+  top: 30px;
+   left: 170px;
+}
+.zthird p {
+  margin-top: 20px;
+   left: 120px;
+}
+
+.zfourth h3 {
+  top: 45px;
+   left: 190px;
+}
+
+.zfourth p {
+  margin-top: 10px;
+   left: 60px;
+}
+
+.carousel-caption p{
+  font-size: 15px;
+  position: absolute;
+   top: 10px;
+  color: #8B4513 ;
+  font-weight: bold;
+}
+.left{
+  opacity: 0.1;
+}
+.right{
+  opacity: 0.1;
+}
+
+h1, h2 {
+  
+  font-weight: 400;
+}
+
+.subscribe{
+  
+  background: url(chocolate.jpg) no-repeat center fixed; 
+  background-size: cover;
+
+}
+
+.zdown{
+  padding-bottom: 150px;
+}
+
+ h1{
+  font-family: 'Acme', sans-serif;
+  
+    color: white;
+
+  padding-top: 150px;
+
+
+  }
+  .subscribe p {
+    font-family: 'Acme', sans-serif;
+    color: white;
+    font-size: 25px;
+  }
+input[type=submit] {
+    background-color: #FFF;
+    border: none;
+    color: #8B4513;
+    /*margin-left: 48%;*/
+    text-decoration: none;
+   
+    cursor: pointer;
+  }
+
+  input[type=text] {
+   /* margin-left: 43%;*/
+  }
+  
+footer{
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  color: #8B4513;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+
+}
+
+.contact{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+.quotes p {
+position: absolute;
+
+  font-size: 30px;
+  left: 32%;
+  top: 70px;
+  text-align: center;
+
+}
+
+.address{
+ position: absolute;
+    top: 50px;
+    right: 40px;
+}
+.content-wrap span{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+ .last p {
+  position: absolute;
+top: 250px;
+left: 40%;
+  bottom: 20px;
+ }
+

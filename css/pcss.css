@@ -1,0 +1,206 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background-size: cover;
+  text-align: justify;
+  
+}
+
+  /**/
+
+  .zap{
+
+    padding-top: 50px;
+    
+
+  }
+
+  .cside{
+
+
+  }
+
+  .zap a{
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    
+     color: #8B4513;
+  }
+
+  .zhippingz{
+  background-color: #DEB887;
+  text-align: center;
+  padding: 13px;
+  }
+
+  #zhip p {
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+     font-weight: 200px;
+    margin-bottom: 0px;
+    color: #8B4513;
+   
+    padding: 0px;
+  }
+
+ul {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #8B4513;
+    text-align: center;
+}
+.zertha{
+  margin-top: 5px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.glyphicon{
+  
+  
+margin-left: 250px;
+font-size: 20px !important ;
+
+}
+
+.zmenu{
+margin-top: 5px;
+margin-left: 18%;
+}
+
+.zd{
+  margin-top: 5px;
+}
+.zpad{
+  margin-left: 200px; 
+margin-right: 200px;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #8B4513;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.zl{
+  left: 80%;
+}
+
+/*.zd a{
+  left: 70%;
+}*/
+
+.subscribe{
+  
+  background: url(chocolate.jpg) no-repeat center fixed; 
+  background-size: cover;
+
+
+}
+
+.subscribe p {
+    font-family: 'Acme', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .subscribe h1{
+
+    font-family: 'Acme', sans-serif;
+  
+    color: white;
+    text-align: center;
+
+  padding-top: 150px;
+
+  }
+
+  .zdown{
+  padding-bottom: 150px;
+}
+
+input[type=submit] {
+    background-color: #FFF;
+    border: none;
+    color: #8B4513;
+    margin-left: 48%;
+    text-decoration: none;
+   
+    cursor: pointer;
+  }
+
+  input[type=text] {
+    margin-left: 43%;
+  }
+
+footer{
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  color: #8B4513;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+
+}
+
+.contact{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+.quotes p {
+position: absolute;
+
+  font-size: 30px;
+  left: 32%;
+  top: 70px;
+  text-align: center;
+
+}
+
+.address{
+ position: absolute;
+    top: 50px;
+    right: 40px;
+}
+.content-wrap span{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+ .last p {
+  position: absolute;
+top: 250px;
+left: 40%;
+  bottom: 20px;
+ }
+
+ .zap p {
+    margin: 0 0 15px; 
+    font-size: 25px;
+}

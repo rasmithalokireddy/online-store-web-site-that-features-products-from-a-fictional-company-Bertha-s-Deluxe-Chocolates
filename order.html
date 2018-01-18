@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Lokireddy, Rasmitha
+       Jadrn032
+       project #4
+       fall 2017  -->
+<head>
+  <title>Bertha's Deluxe Chocolates | Order</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/ajax_get_lib.js"></script>
+  <script type="text/javascript" src="js/shopping_cart.js"></script>  
+  <script type="text/javascript" src="js/ajax_populate_page.js"></script>
+  <script type="text/javascript" src="js/orders.js"></script>
+  <link rel="stylesheet" href="css/ocss.css">
+</head>
+<body>
+   <header id="zhip">
+    <p class="zhippingz">Shipping  2$ for each item </p>
+    <div class="content-wrap">
+      <ul>
+        <li class="zertha"> <a href="index.html">Bertha's Deluxe Chocolates</a></li>
+     <li class="zmenu"> <a href="index.html">Home</a> </li>
+     <li class="zd"> <a href="product.html">Products</a></li>
+      <li class="zd"><a href="order.html">Order Online</a></li>
+     <li class="zd"> <a href="aboutus.html">About Us</a></li>
+      <li class="zd"><a href="contact.html">Contact</a></li>
+        <li><a href="order.html"><span class="glyphicon">&#xe116;</span> Cart: <span id="count"></span> </a></li>
+      </ul>
+    </div>
+  </header>
+<div><h2>MY ORDER</h2></div>
+<div id="cart"></div>
+
+<div class="container">
+<button type="button" onclick="validatecart()"  class="btn btn-primary pull-right" id="pbutton">PROCEED TO CHECKOUT<span class="glyphicon glyphicon-chevron-right"></span></button>
+<script type="text/javascript">
+  function validatecart() {
+    console.log("Here");
+    var cartcount= document.getElementById("count").innerHTML;
+    console.log("cart count ", cartcount);
+    if(cartcount==0){
+    alert("Cart is Empty");
+    }
+    else if (isNaN(cartcount)) {
+     alert("Cart count is not a number"); 
+    }
+    else{
+     window.location.replace("http://jadran.sdsu.edu/~jadrn032/proj4/checkout.html");
+    }
+
+    
+  }
+</script>
+</body>
+
+</html>
